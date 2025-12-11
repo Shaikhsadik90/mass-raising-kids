@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Mass Raising Kids</title>
+
+<style>
+/* ========= DONATE SECTION STYLING ========= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* BACK TO HOME BUTTON */
+.back-home {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 18px;
+    background: #2c6fb2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.back-home:hover {
+    background: #174a73;
+    transform: translateY(-3px);
+}
+
+/* Main Section */
+.donate-section {
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #e3f2fd, #fff);
+    display: flex;
+    justify-content: center;
+}
+
+.donate-container {
+    max-width: 600px;
+    text-align: center;
+    animation: fadeUp 1s ease-out;
+}
+
+.donate-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1f2d3a;
+}
+
+.donate-subtitle {
+    font-size: 16px;
+    color: #546e7a;
+    margin: 10px 0 35px;
+}
+
+/* ======== CARD ======== */
+.donate-card {
+    background: #ffffffc7;
+    backdrop-filter: blur(10px);
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    animation: fadeScale 1s ease-out;
+}
+
+.amount-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Heart Animation */
+.heart-icon {
+    width: 20px;
+    height: 20px;
+    color: crimson;
+    animation: pulse 1.4s infinite ease-in-out;
+}
+
+/* ====== AMOUNT BUTTONS ====== */
+.amount-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.amount-btn {
+    background: #2c6fb2;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.amount-btn:hover {
+    background: #1a4c7e;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(44,111,178,0.3);
+}
+
+/* Selected Amount */
+.active-amount {
+    background: #174a73 !important;
+    box-shadow: 0 8px 20px rgba(23,74,115,0.35) !important;
+    transform: translateY(-4px);
+}
+
+/* ====== CUSTOM AMOUNT ====== */
+.custom-amount {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 2px solid #bbdefb;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.custom-amount:focus {
+    border-color: #2c6fb2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(44,111,178,0.4);
+}
+
+/* ====== DONATE BUTTON ====== */
+.donate-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #ff5252, #ff1744);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.donate-submit:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(255,23,68,0.4);
+}
+
+/* Animations */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeScale {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.3); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #2c6fb2, #174a73);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- BACK HOME BUTTON -->
+<a href="web.html" class="back-home">← Back to Home</a>
+
+<!-- DONATE SECTION -->
+<section class="donate-section">
+    <div class="donate-container">
+
+        <h2 class="donate-title">Support Mass Raising Kids</h2>
+        <p class="donate-subtitle">
+            Your contribution helps children who lost their fathers and supports single mothers with education & welfare.
+        </p>
+
+        <div class="donate-card">
+
+            <div class="amount-title">
+                <i class="heart-icon">❤</i>
+                Choose Donation Amount
+            </div>
+
+            <div class="amount-options">
+                <button class="amount-btn">₹500</button>
+                <button class="amount-btn">₹1,000</button>
+                <button class="amount-btn">₹2,500</button>
+                <button class="amount-btn">₹5,000</button>
+            </div>
+
+            <input type="number" class="custom-amount" placeholder="Enter Custom Amount">
+
+            <a href="mailto:itdepartment.arrahmantax@gmail.com?subject=Donation%20Request%20-%20Mass%20Raising%20Kids&body=Hello,%0D%0A%0D%0AI%20want%20to%20donate.%20Please%20share%20bank%20details.%0D%0A%0D%0AThank%20you."
+                class="donate-submit">
+                Donate Now
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>MASS Raising Kids</h3>
+    <p>© 2025 | Helping  Mothers & Children with Education & Welfare</p>
+</footer>
+
+
+
+
+
+<script>
+    const amountButtons = document.querySelectorAll(".amount-btn");
+    const customInput = document.querySelector(".custom-amount");
+    const donateBtn = document.querySelector(".donate-submit");
+
+    // Update mail body dynamically
+    function updateMailLink() {
+        let amount = customInput.value.trim();
+
+        const mailText =
+`Hello,
+
+I want to donate.
+Amount: ₹${amount || "Not specified"}
+
+Please share bank details.
+
+Thank you.`
+
+        const mailTo = "mailto:itdepartment.arrahmantax@gmail.com"
+            + "?subject=" + encodeURIComponent("Donation Request - Mass Raising Kids")
+            + "&body=" + encodeURIComponent(mailText);
+
+        donateBtn.href = mailTo;
+    }
+
+    // Handle amount button click
+    amountButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            // remove previous active button
+            amountButtons.forEach(b => b.classList.remove("active-amount"));
+            btn.classList.add("active-amount");
+
+            // set amount in input
+            const amount = btn.innerText.replace("₹", "").replace(",", "");
+            customInput.value = amount;
+
+            updateMailLink();
+        });
+    });
+
+    // Handle user typing custom amount
+    customInput.addEventListener("input", () => {
+        amountButtons.forEach(b => b.classList.remove("active-amount"));
+        updateMailLink();
+    });
+
+    // Initialize mail link on load
+    updateMailLink();
+</script>

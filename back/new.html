@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mass Raising Kids — Scarborough Community Support</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* =========================
+     Variables & reset
+  ========================= */
+        :root {
+            --primary: #2c5aa0;
+            --dark: #0a203c;
+            --accent: #e67e22;
+            --muted: #f5f7fb;
+            --glass: rgba(255, 255, 255, 0.06);
+            --white: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+            color: var(--dark);
+            background: var(--muted);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* =========================
+     Header / Navbar
+  ========================= */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1200;
+            background: rgba(10, 30, 60, 0.6);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all .28s ease;
+            padding: 18px 0;
+            box-shadow: 0 6px 30px rgba(10, 30, 60, 0.08);
+        }
+
+        .header.scrolled {
+            padding: 12px 0;
+            background: rgba(10, 30, 60, 0.9)
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+
+        .logo-img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            border-radius: 12%;
+            transition: all .35s ease
+        }
+
+        .logo-img:hover {
+            transform: scale(1.08) rotate(-3deg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25)
+        }
+
+        .logo-text h1 {
+            color: var(--white);
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: .3px
+        }
+
+        .logo-text .tagline {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.85)
+        }
+
+        nav.nav {
+            display: flex;
+            align-items: center;
+            gap: 20px
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            align-items: center
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            padding: 8px 0;
+            transition: all .22s
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 0;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+            transition: width .22s
+        }
+
+        .nav-links a:hover {
+            color: var(--accent)
+        }
+
+        .nav-links a:hover::after {
+            width: 100%
+        }
+
+        /* hamburger */
+        .menu-btn {
+            display: none;
+            background: rgba(255, 255, 255, 0.08);
+            border: none;
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-size: 26px;
+            cursor: pointer;
+            transition: all .2s
+        }
+
+        .menu-btn:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.12)
+        }
+
+        /* mobile nav (slide panel) */
+        .mobile-panel {
+            display: none
+        }
+
+        @media (max-width: 900px) {
+            .nav-links {
+                display: none
+            }
+
+            .menu-btn {
+                display: block
+            }
+
+            .mobile-panel {
+                display: block;
+                position: fixed;
+                right: 0;
+                top: 0;
+                height: 100vh;
+                width: 78%;
+                background: linear-gradient(180deg, rgba(10, 30, 60, 0.96), rgba(10, 30, 60, 0.98));
+                transform: translateX(110%);
+                transition: transform .32s ease;
+                z-index: 1300;
+                padding: 80px 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+
+            .mobile-panel.open {
+                transform: translateX(0)
+            }
+
+            .mobile-panel a {
+                color: #fff;
+                font-size: 18px;
+                text-decoration: none
+            }
+        }
+
+        /* =========================
+     Hero — particles + gradient
+  ==/* HERO Section with Background Slideshow */
+        .hero {
+            position: relative;
+            padding: 120px 0;
+            color: white;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            animation: heroSlide 18s infinite ease-in-out;
+        }
+
+        /* Slight overlay for readability */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 5;
+        }
+
+        /* Background Slideshow Animation */
+        @keyframes heroSlide {
+            0% {
+                background-image: url('mrklogo.png');
+            }
+
+            33% {
+                background-image: url('ScreenXS.jpeg');
+            }
+
+            66% {
+                background-image: url('hero3.jpg');
+            }
+
+            100% {
+                background-image: url('ScreenXS.jpeg');
+            }
+        }
+
+        /* TEXT Styling */
+        .hero-left h2 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .hero-left p {
+            margin-top: 15px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* HERO BUTTONS */
+        .hero-buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+
+        .hero .container {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px
+        }
+
+        .hero-left {
+            flex: 1;
+            max-width: 700px
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            line-height: 1.05;
+            margin-bottom: 14px;
+            font-weight: 800
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: .95;
+            margin-bottom: 18px
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 0;
+            cursor: pointer;
+            font-weight: 700
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 10px 30px rgba(230, 126, 34, 0.12);
+            transition: transform .18s
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px)
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.14);
+            color: #fff
+        }
+
+        /* hero image / placeholder */
+        .hero-visual {
+            flex: 0 0 420px;
+            height: 300px;
+            background: url('hero.jpg') center/cover no-repeat;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+        }
+
+        /* floating particles */
+        .particles {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 2
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            filter: blur(6px);
+            animation: float 10s linear infinite
+        }
+
+        .particle.s1 {
+            width: 16px;
+            height: 16px;
+            left: 10%;
+            top: 10%;
+            animation-duration: 12s
+        }
+
+        .particle.s2 {
+            width: 10px;
+            height: 10px;
+            left: 25%;
+            top: 70%;
+            animation-duration: 9s
+        }
+
+        .particle.s3 {
+            width: 40px;
+            height: 40px;
+            left: 70%;
+            top: 20%;
+            animation-duration: 22s
+        }
+
+        .particle.s4 {
+            width: 8px;
+            height: 8px;
+            left: 84%;
+            top: 60%;
+            animation-duration: 14s
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-30px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+
+        /* =========================
+     Sections: titles, grid helpers
+  ========================= */
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 12px;
+            font-weight: 800;
+            color: var(--dark)
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #54657a;
+            margin-bottom: 22px
+        }
+
+        section {
+            padding: 72px 0;
+            background: transparent
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            align-items: stretch
+        }
+
+        @media(max-width:980px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:600px) {
+            .card-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* =========================
+     Mission & parallax
+  ========================= */
+        .mission {
+            background-attachment: fixed;
+            background-image: linear-gradient(180deg, rgba(245, 247, 251, 0.9), rgba(245, 247, 251, 0.9))
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .mission-card {
+            background: #fff;
+            padding: 26px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(2, 10, 22, 0.06);
+            text-align: center
+        }
+
+        /* =========================
+     Testimonial slider
+  ========================= */
+        .testimonials-container {
+            position: relative;
+            overflow: hidden
+        }
+
+        .testimonials-track {
+            display: flex;
+            gap: 18px;
+            transition: transform .6s cubic-bezier(.2, .9, .3, 1)
+        }
+
+        .testimonial-card {
+            flex: 0 0 calc(33.333% - 12px);
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06)
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #333;
+            margin-bottom: 10px
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 14px
+        }
+
+        @media(max-width:980px) {
+            .testimonial-card {
+                flex: 0 0 calc(50% - 12px)
+            }
+        }
+
+        @media(max-width:600px) {
+            .testimonial-card {
+                flex: 0 0 100%
+            }
+        }
+
+        .test-controls {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 16px
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #d7dbe0;
+            cursor: pointer
+        }
+
+        .dot.active {
+            background: var(--accent)
+        }
+
+        /* =========================
+     Donate / Support cards
+  ========================= */
+        .donate-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 18px
+        }
+
+        .donate-card {
+            background: linear-gradient(180deg, #fff, #fcfcfc);
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 12px 40px rgba(2, 10, 22, 0.06)
+        }
+
+        .donate-card h4 {
+            margin-bottom: 8px;
+            color: var(--primary)
+        }
+
+        @media(max-width:980px) {
+            .donate-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:600px) {
+            .donate-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* =========================
+     Impact counters
+  ========================= */
+        .impact {
+            background: linear-gradient(135deg, var(--primary), #16385f);
+            color: #fff;
+            padding: 64px 0;
+            position: relative;
+            overflow: hidden
+        }
+
+        .impact .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1100px;
+            margin: 30px auto 0
+        }
+
+        @media(max-width:980px) {
+            .impact .stats {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:600px) {
+            .impact .stats {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .stat {
+            text-align: center;
+            padding: 18px
+        }
+
+        .stat-number {
+            font-size: 44px;
+            font-weight: 800;
+            color: var(--accent);
+            opacity: 0;
+            transform: translateY(18px);
+            transition: all .6s
+        }
+
+        .stat-number.visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .stat p {
+            opacity: .95;
+            margin-top: 8px
+        }
+
+        /* =========================
+     Floating contact button
+  ========================= */
+        .float-contact {
+            position: fixed;
+            right: 20px;
+            bottom: 24px;
+            background: var(--accent);
+            color: #fff;
+            padding: 14px;
+            border-radius: 14px;
+            box-shadow: 0 12px 35px rgba(230, 126, 34, 0.18);
+            z-index: 1400;
+            cursor: pointer;
+            font-weight: 700
+        }
+
+        .float-contact small {
+            display: block;
+            font-size: 11px;
+            opacity: .95
+        }
+
+        /* =========================
+     Contact form & footer
+  ========================= */
+        .contact-form {
+            max-width: 720px;
+            margin: 18px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e6eaf0
+        }
+
+        .contact-form textarea {
+            grid-column: 1/3;
+            min-height: 130px
+        }
+
+        @media(max-width:720px) {
+            .contact-form {
+                grid-template-columns: 1fr
+            }
+
+            .contact-form textarea {
+                grid-column: 1/2
+            }
+        }
+
+        .footer {
+            background: #031322;
+            color: #e6eef6;
+            padding: 30px 0;
+            margin-top: 30px
+        }
+
+        .footer .footer-flex {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap
+        }
+
+        .footer .footer-left {
+            display: flex;
+            gap: 12px;
+            align-items: center
+        }
+
+        .footer a {
+            color: #cfe6ff;
+            text-decoration: none
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 18px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px
+        }
+
+        /* small helpers */
+        .muted {
+            color: #6f8193
+        }
+
+        .center {
+            display: block;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="siteHeader">
+        <div class="container">
+            <div class="logo">
+                <img src="mrklogo.png" alt="Mass Raising Kids Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Mass Raising Kids</h1>
+                    <div class="tagline">Scarborough Community Support</div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#how">How We Help</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- mobile panel -->
+        <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+            <a href="#home" onclick="toggleMobile()">Home</a>
+            <a href="#mission" onclick="toggleMobile()">Mission</a>
+            <a href="#how" onclick="toggleMobile()">How We Help</a>
+            <a href="#testimonials" onclick="toggleMobile()">Testimonials</a>
+            <a href="#contact" onclick="toggleMobile()">Contact</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="particles" aria-hidden="true">
+            <div class="particle s1"></div>
+            <div class="particle s2"></div>
+            <div class="particle s3"></div>
+            <div class="particle s4"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-left">
+                <h2>We Support Single Mothers & Their Children</h2>
+                <p>After loss, hope remains. We provide education, care, and community support to families in
+                    Scarborough.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary"
+                        onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Get
+                        Help</button>
+                    <a class="btn btn-secondary" href="#">Support</a>
+                </div>
+            </div>
+
+            <div class="hero-visual" role="img" aria-label="Children and community"></div>
+        </div>
+    </section>
+
+    <!-- MISSION (parallax feel) -->
+    <section class="mission" id="mission">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-subtitle">Supporting families through education and community care</p>
+
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div style="font-size:34px;margin-bottom:10px">📚</div>
+                    <h4>Educational Support</h4>
+                    <p>Quality education and learning resources for children from single mother households.</p>
+                </div>
+
+                <div class="mission-card">
+                    <div style="font-size:34px;margin-bottom:10px">❤️</div>
+                    <h4>Community Care</h4>
+                    <p>Emotional, financial and social support to mothers who lost their partners.</p>
+                </div>
+
+                <div class="mission-card">
+                    <div style="font-size:34px;margin-bottom:10px">⭐</div>
+                    <h4>Character Development</h4>
+                    <p>Programs focused on values, mentoring and consistent follow-up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW WE HELP -->
+    <section class="how-it-works" id="how">
+        <div class="container">
+            <h2 class="section-title">How We Help</h2>
+            <p class="section-subtitle">Our comprehensive support process</p>
+
+            <div class="card-grid">
+                <div class="mission-card">
+                    <h4>Application & Assessment</h4>
+                    <p>Families apply, we assess needs and create a tailored support plan.</p>
+                </div>
+                <div class="mission-card">
+                    <h4>Character & Audit Checks</h4>
+                    <p>Regular character monitoring to ensure children's safe development.</p>
+                </div>
+                <div class="mission-card">
+                    <h4>Education Monitoring</h4>
+                    <p>Tutoring, school support and progress tracking to help students thrive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS (slider) -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Success Stories & Testimonials</h2>
+            <p class="section-subtitle">Families we've helped in Scarborough</p>
+
+            <div class="testimonials-container">
+                <div class="testimonials-track" id="testTrack">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"After my husband's passing, this organization gave us hope..."</p>
+                        <p class="testimonial-author">- Fatima</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The education support helped my daughter improve her grades..."</p>
+                        <p class="testimonial-author">- Aisha</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Mass Raising Kids gave us direction and support when we needed it
+                            most."</p>
+                        <p class="testimonial-author">- Ahmed</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Their guidance helped us stay disciplined and my kids became more
+                            focused."</p>
+                        <p class="testimonial-author">- Mariam</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"This program changed our life. The monitoring system kept us on the
+                            right path."</p>
+                        <p class="testimonial-author">- Bilal</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The team helped me overcome my struggles and gave my children a
+                            bright future."</p>
+                        <p class="testimonial-author">- Sana</p>
+                    </div>
+                </div>
+
+                <div class="test-controls center" id="testDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATE / SUPPORT -->
+    <section class="donate" id="donate">
+        <div class="container">
+            <h2 class="section-title">How You Can Support</h2>
+            <p class="section-subtitle">Small help goes a long way — donate, sponsor, or volunteer</p>
+
+            <div class="donate-grid">
+                <div class="donate-card">
+                    <h4>Sponsor a Child</h4>
+                    <p>Provide school fees and supplies.</p>
+                    <button class="btn btn-primary"
+                        onclick="alert('Thank you — contact us to sponsor')">Sponsor</button>
+                </div>
+                <div class="donate-card">
+                    <h4>Donate Funds</h4>
+                    <p>We use funds transparently for education and care.</p>
+                    <button class="btn btn-primary"
+                        onclick="alert('Thank you for your donation interest')">Donate</button>
+                </div>
+                <div class="donate-card">
+                    <h4>Volunteer</h4>
+                    <p>Join our mentoring and events team.</p>
+                    <button class="btn btn-primary"
+                        onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Get
+                        Involved</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACT (counters) -->
+    <section class="impact" aria-label="Our impact">
+        <div class="container">
+            <h2 class="section-title" style="color:#fff;text-align:center">Our Impact</h2>
+
+            <div class="stats" role="list">
+                <div class="stat" role="listitem">
+                    <div class="stat-number" data-target="150" data-suffix="+">0</div>
+                    <p>Families Supported</p>
+                </div>
+                <div class="stat" role="listitem">
+                    <div class="stat-number" data-target="320" data-suffix="+">0</div>
+                    <p>Children Helped</p>
+                </div>
+                <div class="stat" role="listitem">
+                    <div class="stat-number" data-target="95" data-suffix="%">0</div>
+                    <p>Success Rate</p>
+                </div>
+                <div class="stat" role="listitem">
+                    <div class="stat-number" data-target="15" data-suffix="+">0</div>
+                    <p>Years of Service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container center">
+            <h2>How You Can Help</h2>
+            <p class="muted">Join us in making a difference in single mothers' and children's lives in Scarborough</p>
+            <div style="margin-top:16px">
+                <button class="btn btn-primary"
+                    onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Get in
+                    Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Whether you need help or want to support us</p>
+
+            <form id="contactForm" class="contact-form" action="mailto:itdepartment.arrahmantax@gmail.com" method="post"
+                enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FLOATING CONTACT -->
+    <button class="float-contact" id="floatContact" title="Contact">
+        Contact Us
+        <small>Quick help</small>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-left">
+                <img src="mrklogo.png" style="width:56px;border-radius:8px" alt="logo">
+                <div>
+                    <div style="font-weight:700;color:#fff">Mass Raising Kids</div>
+                    <div class="muted">Supporting single mothers & children</div>
+                </div>
+            </div>
+
+            <div class="footer-center">
+                <h4 style="color:#fff">Quick Links</h4>
+                <ul style="list-style:none;padding:0">
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#how">How We Help</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h4 style="color:#fff">Contact Us</h4>
+                <p class="muted">Email: info@massraisingkids.ca</p>
+                <p class="muted">Phone: (416) 555-0100</p>
+                <p class="muted">Scarborough, Ontario</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mass Raising Kids — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        /* =========================
+           Small helpers & interactions
+        ========================= */
+
+        /* HEADER scroll style */
+        const siteHeader = document.getElementById('siteHeader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) siteHeader.classList.add('scrolled'); else siteHeader.classList.remove('scrolled');
+        });
+
+        /* HAMBURGER / MOBILE PANEL */
+        const menuBtn = document.getElementById('menuBtn');
+        const mobilePanel = document.getElementById('mobilePanel');
+        function toggleMobile() {
+            mobilePanel.classList.toggle('open');
+            // update aria
+            mobilePanel.setAttribute('aria-hidden', !mobilePanel.classList.contains('open'));
+        }
+        menuBtn.addEventListener('click', toggleMobile);
+
+        /* Close mobile panel on link click — handled by inline onclick above */
+
+        /* FLOATING CONTACT click */
+        document.getElementById('floatContact').addEventListener('click', () => {
+            document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        /* TESTIMONIALS: Auto slider with dots */
+        const track = document.getElementById('testTrack');
+        const slides = Array.from(track.children);
+        const dotsWrap = document.getElementById('testDots');
+        let slideIndex = 0;
+
+        // create dots
+        slides.forEach((s, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot' + (i === 0 ? ' active' : '');
+            dot.dataset.i = i;
+            dot.addEventListener('click', () => { go(i) });
+            dotsWrap.appendChild(dot);
+        });
+
+        function go(i) {
+            const width = slides[0].getBoundingClientRect().width + 18; // gap approx
+            track.style.transform = `translateX(-${i * width}px)`;
+            Array.from(dotsWrap.children).forEach(d => d.classList.remove('active'));
+            dotsWrap.children[i].classList.add('active');
+            slideIndex = i;
+        }
+
+        function nextSlide() {
+            const next = (slideIndex + 1) % slides.length;
+            go(next);
+        }
+        let tstimer = setInterval(nextSlide, 4200);
+
+        /* Pause on hover */
+        track.addEventListener('mouseenter', () => clearInterval(tstimer));
+        track.addEventListener('mouseleave', () => tstimer = setInterval(nextSlide, 4200));
+
+        /* IMPACT COUNTERS (single clean implementation) */
+        const counters = document.querySelectorAll('.stat-number');
+        let countersStarted = false;
+
+        function startCounting() {
+            counters.forEach(counter => {
+                const target = +counter.dataset.target;
+                const suffix = counter.dataset.suffix || '';
+                let current = 0;
+                const steps = 80;
+                const step = Math.max(1, target / steps);
+                function update() {
+                    current += step;
+                    if (current < target) {
+                        counter.textContent = Math.floor(current) + suffix;
+                        requestAnimationFrame(update);
+                    } else {
+                        counter.textContent = target + suffix;
+                    }
+                }
+                update();
+                counter.classList.add('visible');
+            });
+        }
+
+        function checkCounters() {
+            const imp = document.querySelector('.impact');
+            if (!imp) return;
+            const r = imp.getBoundingClientRect();
+            if (r.top < window.innerHeight - 120 && !countersStarted) {
+                countersStarted = true;
+                startCounting();
+            }
+        }
+        window.addEventListener('scroll', checkCounters);
+        window.addEventListener('load', checkCounters);
+
+        /* CONTACT FORM basic handler */
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                // prevent default for demo
+                e.preventDefault();
+                alert('Thank you! We received your message.');
+                contactForm.reset();
+            });
+        }
+
+        /* Accessibility: close mobile with escape key */
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobilePanel.classList.contains('open')) {
+                toggleMobile();
+            }
+        });
+
+        /* small: ensure hero particles move randomly (subtle) */
+        const particles = document.querySelectorAll('.particle');
+        particles.forEach((p, i) => {
+            const dur = 8 + (i * 3);
+            p.style.animationDuration = dur + 's';
+            p.style.opacity = (0.04 + Math.random() * 0.12).toString();
+        });
+    </script>
+</body>
+
+</html>

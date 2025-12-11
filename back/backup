@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Raising Kids - Help Single Mothers in Scarborough</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="mrklogo.png" alt="Mass Raising Kids Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>MASS Raising Kids</h1>
+                    <p class="tagline">Scarborough Community Support</p>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <button class="menu-btn" id="menuBtn">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#how">How We Help</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <h2>We Support Single Mothers & Their Children</h2>
+            <p>After loss, hope remains. We provide education, care, and community support.</p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Get Help</button>
+                <a href="Support.html" class="btn btn-secondary">Support</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mission Section -->
+    <section class="mission" id="mission">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-subtitle">Supporting families through education and community care</p>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="icon">📚</div>
+                    <h3>Educational Support</h3>
+                    <p>Quality education for children of all backgrounds. We ensure every child receives proper
+                        schooling and learning resources.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="icon">❤️</div>
+                    <h3>Community Care</h3>
+                    <p>Comprehensive support for single mothers who have lost their husbands. We stand with them in
+                        their journey.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="icon">⭐</div>
+                    <h3>Character Development</h3>
+                    <p>Building strong, moral values in children. We monitor character growth and ensure positive
+                        development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Help Section -->
+    <section class="how-it-works" id="how">
+        <div class="container">
+            <h2 class="section-title">How We Help</h2>
+            <p class="section-subtitle">Our comprehensive support process</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Application & Assessment</h3>
+                    <p>Families apply through our program. We conduct thorough assessment of the family's needs and
+                        background.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Character & Audit Check</h3>
+                    <p>Our team conducts regular character and conduct audits. We ensure the mother and children are on
+                        the right path.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Education Monitoring</h3>
+                    <p>We track child's academic performance and provide tutoring support. Education is our top
+                        priority.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Ongoing Support</h3>
+                    <p>Regular follow-ups, financial assistance, and community mentorship throughout their journey with
+                        us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Success Stories & Testimonials</h2>
+            <p class="section-subtitle">Families we've helped in Scarborough</p>
+
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"After my husband's passing, this organization gave us hope. My children
+                        are now in good schools and I feel supported."</p>
+                    <p class="testimonial-author">- Fatima (Mother of 2)</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The education support helped my daughter improve her grades
+                        tremendously. The team truly cares about our children's future."</p>
+                    <p class="testimonial-author">- Aisha (Mother of 3)</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We were lost after my father passed away. Mass Raising Kids gave us
+                        direction and support when we needed it most."</p>
+                    <p class="testimonial-author">- Ahmed (17-year-old Student)</p>
+                </div>
+
+                <!-- NEW 3 CARDS BELOW -->
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Their guidance helped us stay disciplined and my kids became more
+                        focused on studies and manners."</p>
+                    <p class="testimonial-author">- Mariam (Mother of 2)</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"This program changed our life. The monitoring system and support kept
+                        us on the right path."</p>
+                    <p class="testimonial-author">- Bilal (16-year-old Student)</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The team helped me overcome my struggles and gave my children a bright
+                        future. Truly a blessing."</p>
+                    <p class="testimonial-author">- Sana (Mother of 1)</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Impact Statistics -->
+
+    <section class="impact">
+        <div class="stats">
+            <div class="stat">
+                <h3 class="stat-number" data-target="150" data-suffix="+">0</h3>
+                <p>Families Supported</p>
+            </div>
+            <div class="stat">
+                <h3 class="stat-number" data-target="320" data-suffix="+">0</h3>
+                <p>Children Helped</p>
+            </div>
+            <div class="stat">
+                <h3 class="stat-number" data-target="95" data-suffix="%">0</h3>
+                <p>Success Rate</p>
+            </div>
+            <div class="stat">
+                <h3 class="stat-number" data-target="15" data-suffix="+">0</h3>
+                <p>Years of Service</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>How You Can Help</h2>
+            <p>Join us in making a difference in single mothers' and children's lives in Scarborough</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="scrollToContact()">Get in Touch</button>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Whether you need help or want to support us</p>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-flex">
+            <!-- Left: Logo -->
+            <div class="footer-left">
+                <div class="footer-logo-section">
+                    <img src="mrklogo.png" alt="Mass Raising Kids Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Mass Raising Kids</h1>
+                        <span class="tagline">Supporting single mothers & children</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center: Quick Links -->
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#how">How We Help</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Contact Info -->
+            <div class="footer-right">
+                <h4>Contact Us</h4>
+                <p>Email: info@massraisingkids.ca</p>
+                <p>Phone: (416) 555-0100</p>
+                <p>Scarborough, Ontario</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mass Raising Kids - . All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById("menuBtn")
+    const navLinks = document.getElementById("navLinks")
+
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active")
+        menuBtn.classList.toggle("active")
+    })
+
+    // Close mobile menu when a link is clicked
+    const links = navLinks.querySelectorAll("a")
+    links.forEach((link) => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active")
+            menuBtn.classList.remove("active")
+        })
+    })
+
+    // Smooth scroll helper
+    function scrollToContact() {
+        const contactSection = document.getElementById("contact")
+        contactSection.scrollIntoView({ behavior: "smooth" })
+    }
+
+    // Contact Form Handler
+    const contactForm = document.getElementById("contactForm")
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault()
+        alert("Thank you for reaching out! We will contact you soon.")
+        contactForm.reset()
+    })
+
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector(".header")
+        const scrollY = window.scrollY
+
+        // Dynamic shadow on scroll
+        if (scrollY > 100) {
+            header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.15)"
+        } else {
+            header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)"
+        }
+
+        // Fade in elements when they come into view
+        const cards = document.querySelectorAll(".mission-card, .step, .testimonial-card, .stat")
+        cards.forEach((card) => {
+            const rect = card.getBoundingClientRect()
+            if (rect.top < window.innerHeight * 0.8 && rect.bottom > 0) {
+                card.style.opacity = "1"
+                card.style.animation = "fadeInUp 0.6s ease forwards"
+            }
+        })
+    })
+
+    // ========== IMPACT COUNTER WORKING FIX ==========
+
+    const counters = document.querySelectorAll(".stat-number");
+    let started = false;
+
+    function startCounting() {
+        counters.forEach(counter => {
+            const target = +counter.dataset.target;
+            const suffix = counter.dataset.suffix || "";
+            let count = 0;
+            const speed = target / 90;
+
+            function update() {
+                if (count < target) {
+                    count += speed;
+                    counter.textContent = Math.floor(count) + suffix;
+                    requestAnimationFrame(update);
+                } else {
+                    counter.textContent = target + suffix;
+                }
+            }
+
+            update();
+
+            // ⭐ IMPORTANT — Animations enable
+            counter.classList.add("visible");
+        });
+    }
+
+    window.addEventListener("scroll", () => {
+        const section = document.querySelector(".impact");
+        if (!section) return;
+
+        const secTop = section.getBoundingClientRect().top;
+
+        if (secTop < window.innerHeight - 100 && !started) {
+            started = true;
+            startCounting();
+        }
+    });
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:itdepartment.arrahmantax@gmail.com?subject=New Message from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+
+    window.location.href = mailtoLink;
+});
+</script>
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2c5aa0;
+    --secondary: #e67e22;
+    --accent: #27ae60;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+    --text-gray: #7f8c8d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn btn-secondarys {
+    background-color: transparent;
+    color: rgb(255, 254, 254);
+    border: 2px solid rgb(238, 219, 219);
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Added smooth animations and transitions */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px rgba(44, 90, 160, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(44, 90, 160, 0.6);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header with navbar effects */
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, #1e3a5f 100%);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Smooth transition for shadow change */
+    transition: box-shadow 0.3s ease, background-position 0.3s ease;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    animation: slideInLeft 0.6s ease;
+    letter-spacing: 0.5px;
+}
+
+.tagline {
+    font-size: 12px;
+    opacity: 0.9;
+    animation: slideInLeft 0.8s ease;
+    margin-top: 2px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: scale(1.1);
+}
+
+.menu-btn.active {
+    transform: rotate(90deg);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    animation: slideDown 0.6s ease;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Enhanced nav link hover with underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    color: var(--secondary);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #1e3a5f 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+    animation: pulse 4s infinite;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.8s ease 0.2s both;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(230, 126, 34, 0.4);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: rgb(33, 28, 28);
+    border: 2px solid rgb(50, 6, 6);
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Sections */
+.section-title {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    animation: slideDown 0.6s ease;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-gray);
+    margin-bottom: 50px;
+    font-size: 18px;
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+/* Mission Section */
+.mission {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    /* Added background animation */
+    background-image: linear-gradient(45deg,
+            transparent 48%,
+            rgba(44, 90, 160, 0.02) 49%,
+            rgba(44, 90, 160, 0.02) 51%,
+            transparent 52%);
+    background-size: 100px 100px;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mission-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease;
+    border-top: 4px solid transparent;
+}
+
+.mission-card:nth-child(1) {
+    animation-delay: 0s;
+    border-top-color: var(--primary);
+}
+
+.mission-card:nth-child(2) {
+    animation-delay: 0.2s;
+    border-top-color: var(--secondary);
+}
+
+.mission-card:nth-child(3) {
+    animation-delay: 0.4s;
+    border-top-color: var(--accent);
+}
+
+.mission-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.mission-card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.mission-card:hover .icon {
+    transform: scale(1.2) rotate(10deg);
+    animation: none;
+}
+
+.mission-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.mission-card p {
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Added connector lines between steps */
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .steps::before {
+        display: block;
+    }
+}
+
+.step {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    animation: fadeInUp 0.6s ease;
+    transition: transform 0.3s ease;
+}
+
+.step:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.step:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.step:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.step:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--secondary);
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    /* Added glow animation */
+    animation: glow 2s infinite;
+}
+
+.step:hover .step-number {
+    transform: scale(1.15);
+    box-shadow: 0 0 25px rgba(230, 126, 34, 0.6);
+    animation: none;
+}
+
+.step h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.step p {
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--secondary);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    font-size: 100px;
+    color: rgba(230, 126, 34, 0.1);
+    top: -30px;
+    right: 10px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+    color: var(--dark);
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.testimonial-author {
+    color: var(--primary);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Impact Section */
+.impact {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, #1e3a5f 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="white" opacity="0.1"/><circle cx="80" cy="80" r="2" fill="white" opacity="0.1"/></svg>');
+    opacity: 0.5;
+    animation: drift 20s infinite linear;
+}
+
+@keyframes drift {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+.impact .section-title {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.stat {
+    text-align: center;
+    animation: fadeInUp 0.6s ease;
+}
+
+.stat:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.stat:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.stat:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.stat:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 10px;
+    /* Added counter animation */
+    display: inline-block;
+    min-width: 120px;
+    animation: slideDown 0.8s ease;
+}
+
+.stat p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* Call to Action */
+.cta {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 15px;
+    animation: slideDown 0.6s ease;
+}
+
+.cta p {
+    font-size: 18px;
+    color: var(--text-gray);
+    margin-bottom: 30px;
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.6s ease 0.4s both;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(44, 90, 160, 0.1);
+    transform: translateY(-2px);
+    background-color: #fafbfc;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 50px 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--secondary), var(--accent), var(--primary));
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.6s ease;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: var(--secondary);
+    animation: slideDown 0.6s ease;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+    line-height: 1.8;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section p:hover {
+    opacity: 1;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-section ul li a:hover {
+    color: var(--secondary);
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--primary);
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        border-bottom: 2px solid var(--secondary);
+        animation: slideDown 0.3s ease;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .hero-buttons,
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 8px rgba(44, 90, 160, 0.3);
+    outline: none;
+}
+
+.contact-form button {
+    padding: 14px 25px;
+    background: var(--secondary);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #d35400;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(230, 126, 34, 0.4);
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        background: var(--primary);
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        display: none;
+        border-radius: 5px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+
+
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header with navbar effects */
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, #1e3a5f 100%);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Smooth transition for shadow change */
+    transition: box-shadow 0.3s ease, background-position 0.3s ease;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    animation: slideInLeft 0.6s ease;
+    letter-spacing: 0.5px;
+}
+
+.tagline {
+    font-size: 12px;
+    opacity: 0.9;
+    animation: slideInLeft 0.8s ease;
+    margin-top: 2px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: scale(1.1);
+}
+
+.menu-btn.active {
+    transform: rotate(90deg);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    animation: slideDown 0.6s ease;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Enhanced nav link hover with underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    color: var(--secondary);
+}
+
+
+
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ---------- HERO ---------- */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(180deg, rgba(7,30,56,0.6), rgba(7,30,56,0.3)),
+    url('ScreenXS.jpeg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px 60px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 18px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0 8px;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   3. Logo
+========================= */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 10%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.4);
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    animation: slideInLeft 0.6s ease;
+}
+
+.logo-text .tagline {
+    font-size: 12px;
+    opacity: 0.9;
+    color: #f0f0f0;
+    margin-top: 2px;
+    animation: slideInLeft 0.8s ease;
+}
+
+/* Responsive Logo */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-text h1 {
+        font-size: 20px;
+    }
+
+    .logo-text .tagline {
+        font-size: 10px;
+    }
+}
+
+/* =========================
+   4. Header & Navbar
+========================= */
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, #1e3a5f 100%);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-position 0.3s ease;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 3s infinite;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    animation: slideDown 0.6s ease;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+    opacity: 1;
+}

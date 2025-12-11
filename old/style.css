@@ -1,0 +1,593 @@
+/* -------------- BASE -------------- */
+:root {
+    --bg: #f7f9fb;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent: #0b79d0;
+    --accent-dark: #0560a8;
+    --glass: rgba(255, 255, 255, 0.7);
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", system-ui, Segoe UI, Roboto, Arial;
+    background: var(--bg);
+    color: #0b1724;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+/* ------------- LAYOUT ------------- */
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ------------- NAVBAR ------------- */
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(180deg, var(--glass), rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 20px rgba(4, 12, 28, 0.06);
+    border-bottom: 1px solid rgba(10, 20, 30, 0.04);
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column
+}
+
+.logo {
+    font-weight: 800;
+    color: var(--accent);
+    font-size: 20px;
+    letter-spacing: .2px
+}
+
+.tag {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px
+}
+
+/* Nav menu */
+.nav-menu {
+    display: flex;
+    gap: 22px;
+    align-items: center
+}
+
+.nav-menu a {
+    color: #102233;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 6px;
+    position: relative
+}
+
+.nav-menu a::after {
+    content: "";
+    height: 2px;
+    background: var(--accent);
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width .25s
+}
+
+.nav-menu a:hover::after {
+    width: 100%
+}
+
+.btn-ghost {
+    border: 1px solid rgba(10, 20, 30, 0.06);
+    padding: 8px 12px;
+    border-radius: 8px
+}
+
+/* hamburger */
+.hamburger {
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 22px;
+    cursor: pointer
+}
+
+/* ------------- HERO ------------- */
+.hero {
+    background:
+        linear-gradient(180deg, rgba(7, 30, 56, 0.6), rgba(7, 30, 56, 0.3)),
+        url('ScreenXS.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* optional: parallax effect */
+}
+
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 34px;
+    align-items: start;
+    padding: 64px 0
+}
+
+.hero-left h1 {
+    font-size: 34px;
+    line-height: 1.12;
+    margin-bottom: 18px;
+    text-shadow: 0 8px 30px rgba(3, 20, 40, 0.45)
+}
+
+.lead {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 16px;
+    margin-bottom: 18px
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(11, 121, 208, 0.18);
+    border: 0
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    color: #fff
+}
+
+.hero-features {
+    list-style: none;
+    margin-top: 16px;
+    padding-left: 0;
+    max-width: 560px
+}
+
+.hero-features li {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px
+}
+
+/* right column cards */
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
+    color: #0b1724
+}
+
+.stats-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 18px;
+    margin-bottom: 16px
+}
+
+.stat {
+    text-align: center
+}
+
+.stat .num {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--accent)
+}
+
+.stat .label {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+/* about cta */
+.about-cta {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    overflow: hidden
+}
+
+.about-cta img {
+    width: 110px;
+    height: 86px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0
+}
+
+.about-cta-body h4 {
+    margin: 0 0 6px
+}
+
+.about-cta-body p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px
+}
+
+.link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none
+}
+
+/* ------------- SECTIONS ------------- */
+.section {
+    padding: 72px 0;
+    background: transparent
+}
+
+.section.light {
+    background: #f4f7fb
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 14px
+}
+
+.section-intro {
+    color: var(--muted);
+    max-width: 840px;
+    margin: 0 auto 22px;
+    text-align: center
+}
+
+/* columns */
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    margin-top: 20px
+}
+
+.col h3 {
+    margin-bottom: 10px;
+    color: #0b1724
+}
+
+.col p {
+    color: var(--muted);
+    line-height: 1.6
+}
+
+/* mission list */
+.mission-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 22px
+}
+
+.mission-list h4 {
+    margin-bottom: 6px
+}
+
+/* ------------- CARDS GRID ------------- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 22px
+}
+
+.kid-card {
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06)
+}
+
+.kid-thumb {
+    height: 150px;
+    background-size: cover;
+    background-position: center
+}
+
+.kid-body {
+    padding: 14px
+}
+
+.kid-body h3 {
+    margin: 0 0 8px;
+    font-size: 18px
+}
+
+.kid-body p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5
+}
+
+/* ------------- TESTIMONIALS ------------- */
+.testimonials-wrap {
+    position: relative;
+    max-width: 860px;
+    margin: 18px auto 0
+}
+
+.testimonial {
+    display: none;
+    background: var(--card);
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06)
+}
+
+.testimonial.active {
+    display: block
+}
+
+.quote {
+    font-style: italic;
+    color: #0b1724;
+    line-height: 1.7
+}
+
+.who {
+    color: var(--muted);
+    margin-top: 10px
+}
+
+.testi-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 12px
+}
+
+.testi-controls button {
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+/* ------------- HELP GRID ------------- */
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 18px
+}
+
+.help-card {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06)
+}
+
+.help-card h3 {
+    margin-bottom: 8px
+}
+
+/* ------------- CONTACT ------------- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 22px;
+    align-items: start
+}
+
+.contact-info h2 {
+    margin-bottom: 8px
+}
+
+.info-list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--muted)
+}
+
+.contact-form {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06)
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #0b1724
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(10, 20, 30, 0.06);
+    font-size: 14px
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 8px
+}
+
+/* ------------- FOOTER ------------- */
+.footer {
+    background: #071426;
+    color: #cfeafc;
+    padding: 28px 0;
+    margin-top: 30px
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px
+}
+
+.footer .muted {
+    color: rgba(255, 255, 255, 0.85)
+}
+
+.socials a {
+    display: inline-block;
+    margin-left: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none
+}
+
+/* copyright */
+copyright {
+    display: block;
+    padding-top: 12px
+}
+
+/* ------------- BACK TO TOP ------------- */
+#toTop {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 8px 24px rgba(11, 121, 208, 0.2)
+}
+
+/* ------------- ANIMATIONS (reveal) ------------- */
+.fade-up {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all .7s cubic-bezier(.2, .9, .2, 1)
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: none
+}
+
+.delay-1 {
+    transition-delay: .12s
+}
+
+.delay-2 {
+    transition-delay: .24s
+}
+
+/* ------------- RESPONSIVE ------------- */
+@media (max-width:1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr 320px
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .columns {
+        grid-template-columns: 1fr
+    }
+
+    .mission-list {
+        grid-template-columns: 1fr
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+@media (max-width:720px) {
+    .nav-menu {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 64px;
+        background: #fff;
+        box-shadow: 0 8px 30px rgba(2, 6, 23, 0.08);
+        flex-direction: column;
+        padding: 12px;
+        border-radius: 8px
+    }
+
+    .hamburger {
+        display: block
+    }
+
+    .hero {
+        padding-top: 78px;
+        min-height: 70vh
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 18px
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr
+    }
+
+    .stats-card {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    #toTop {
+        right: 10px;
+        bottom: 10px
+    }
+}
