@@ -7,7 +7,6 @@
     <title>Our Global Branches | Mass Raising Kids</title>
 
     <style>
-        
         :root {
             --primary: #1d4f91;
             --primary-light: #2c6fb2;
@@ -38,8 +37,8 @@
             font-weight: 600;
         }
 
-      /* PAGE TITLE SECTION */
-      .page-title {
+        /* PAGE TITLE SECTION */
+        .page-title {
             width: 100%;
             padding: 80px 20px;
             background: linear-gradient(135deg, #2b5876, #4e4376);
@@ -150,28 +149,96 @@
             margin-top: 10px;
         }
 
+
+
         /* DONATION POLICY */
         .donation-policy {
-            background: white;
-            padding: 60px 20px;
+            background: linear-gradient(135deg, #1b2a49, #1e3c72);
+            padding: 70px 25px;
             text-align: center;
-            margin-top: 40px;
-            border-top: 6px solid var(--primary);
+            color: white;
+            border-radius: 40px 40px 0 0;
+            margin-top: 60px;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
         }
 
+        /* Title */
         .donation-policy h2 {
-            color: var(--primary);
-            font-size: 30px;
-            margin-bottom: 18px;
+            font-size: 34px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            font-weight: 700;
         }
 
+        /* Subtitle */
         .donation-policy p {
             font-size: 18px;
-            color: #444;
             max-width: 800px;
             margin: auto;
-            line-height: 1.7;
+            opacity: 0.9;
         }
+
+        /* Partner Cards Container */
+        .partners {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        /* Individual Card */
+        .partner-card {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 18px 25px;
+            display: flex;
+            gap: 15px;
+            width: 310px;
+            border-radius: 18px;
+            text-align: left;
+            text-decoration: none;
+            color: white;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: 0.3s ease;
+        }
+
+        /* Icon on left */
+        .partner-card .icon {
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Text inside card */
+        .partner-card h3 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .partner-card p {
+            font-size: 14px;
+            margin: 5px 0 0 0;
+            opacity: 0.8;
+        }
+
+        /* Hover Effect */
+        .partner-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Warning note */
+        .note {
+            margin-top: 30px;
+            font-size: 16px;
+            opacity: 0.85;
+            font-style: italic;
+        }
+
 
         /* FOOTER */
         .footer {
@@ -255,21 +322,44 @@
                 <span class="tag">Coming Soon</span>
             </div>
         </div>
-
     </div>
+
+
 
     <!-- DONATION POLICY -->
     <div class="donation-policy">
         <h2>Donation Policy</h2>
+
         <p>
             We strictly DO NOT accept donations from the general public.<br><br>
-            All donations are only approved through:
-            <br><br>
-            <b>✔ Ar Rahman Tax</b><br>
-            <b>✔ SamsRBC</b><br><br>
-            Any donation without approval will NOT be accepted.
+            All donations are only approved through the following authorized partners:
+        </p>
+
+        <!-- Stylish Partner Links -->
+        <div class="partners">
+            <a href="https://www.arrahmantax.com" target="_blank" class="partner-card">
+                <span class="icon">🏢</span>
+                <div>
+                    <h3>Ar Rahman Tax</h3>
+                    <p>Official Donation Approval Partner</p>
+                </div>
+            </a>
+
+            <a href="https://samsrbc.ca" target="_blank" class="partner-card">
+                <span class="icon">🌍</span>
+                <div>
+                    <h3>SamsRBC</h3>
+                    <p>Verified International Partner</p>
+                </div>
+            </a>
+        </div>
+
+        <p class="note">
+            Any donation made without proper approval will NOT be accepted.
         </p>
     </div>
+
+
 
     <!-- FOOTER -->
     <div class="footer">
