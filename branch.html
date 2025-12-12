@@ -262,6 +262,69 @@
                 transform: translateY(0);
             }
         }
+
+        /* FULL MOBILE RESPONSIVE FIX */
+        @media (max-width: 600px) {
+
+            .page-title {
+                padding: 50px 15px;
+                border-radius: 0 0 15px 15px;
+            }
+
+            .page-title h1 {
+                font-size: 1.8rem !important;
+            }
+
+            .page-title p {
+                font-size: 1rem !important;
+                padding: 0 10px;
+            }
+
+            .country-section {
+                padding: 30px 15px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr !important;
+                gap: 18px;
+            }
+
+            .card {
+                padding: 20px;
+                border-radius: 14px;
+            }
+
+            .flag {
+                width: 45px;
+                height: 28px;
+            }
+
+            .donation-policy {
+                padding: 45px 20px;
+                border-radius: 25px 25px 0 0;
+            }
+
+            .donation-policy h2 {
+                font-size: 26px;
+            }
+
+            .partners {
+                flex-direction: column;
+                align-items: center;
+                gap: 18px;
+            }
+
+            .partner-card {
+                width: 100% !important;
+                max-width: 320px;
+                padding: 15px 20px;
+            }
+
+            .footer {
+                padding: 15px;
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 
