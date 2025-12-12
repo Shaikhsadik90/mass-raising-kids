@@ -21,6 +21,7 @@
             margin: 0;
             font-family: "Poppins", sans-serif;
             background: var(--light);
+            overflow-x: hidden;
         }
 
         /* HEADER */
@@ -37,11 +38,15 @@
             font-weight: 600;
         }
 
-        /* PAGE TITLE SECTION */
+        /* TITLE SECTION */
         .page-title {
             width: 100%;
-            padding: 80px 20px;
-            background: linear-gradient(135deg, #2b5876, #4e4376);
+            padding: 80px 0px;
+            background:
+                linear-gradient(135deg, rgba(43, 88, 118, 0.85), rgba(78, 67, 118, 0.85)),
+                url("map.jpg");
+                background-size: cover;
+            background-position: center;
             color: #fff;
             text-align: center;
             border-radius: 0 0 20px 20px;
@@ -49,7 +54,7 @@
             margin-bottom: 40px;
         }
 
-        .page-title .title-content h1 {
+        .page-title h1 {
             font-size: 3rem;
             font-weight: 800;
             letter-spacing: 1px;
@@ -57,33 +62,29 @@
             margin-bottom: 15px;
         }
 
-        .page-title .title-content p {
+        .page-title p {
             font-size: 1.25rem;
-            font-weight: 400;
             max-width: 700px;
             margin: 0 auto;
             opacity: 0.95;
             line-height: 1.6;
         }
 
-        /* Mobile Responsive */
         @media (max-width: 768px) {
             .page-title {
-                padding: 60px 20px;
+                padding: 60px 15px;
             }
 
-            .page-title .title-content h1 {
+            .page-title h1 {
                 font-size: 2rem;
             }
 
-            .page-title .title-content p {
-                font-size: 1.1rem;
+            .page-title p {
+                font-size: 1rem;
             }
         }
 
-
-
-        /* SECTION */
+        /* SECTIONS */
         .country-section {
             padding: 50px 20px;
             max-width: 1200px;
@@ -112,17 +113,15 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             text-align: center;
             transition: 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(12px);
             animation: fadeIn 0.7s ease;
         }
 
         .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 28px rgba(0, 0, 0, 0.15);
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
 
-        /* FLAGS */
         .flag {
             width: 50px;
             height: 32px;
@@ -131,14 +130,12 @@
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
         }
 
-        /* TITLES */
         .card h3 {
             color: var(--dark);
             font-size: 22px;
             margin: 10px 0;
         }
 
-        /* TAGS */
         .tag {
             display: inline-block;
             background: var(--primary);
@@ -149,8 +146,6 @@
             margin-top: 10px;
         }
 
-
-
         /* DONATION POLICY */
         .donation-policy {
             background: linear-gradient(135deg, #1b2a49, #1e3c72);
@@ -160,26 +155,22 @@
             border-radius: 40px 40px 0 0;
             margin-top: 60px;
             box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
-            position: relative;
         }
 
-        /* Title */
         .donation-policy h2 {
             font-size: 34px;
             margin-bottom: 15px;
-            letter-spacing: 1px;
             font-weight: 700;
         }
 
-        /* Subtitle */
         .donation-policy p {
             font-size: 18px;
             max-width: 800px;
             margin: auto;
             opacity: 0.9;
+            line-height: 1.6;
         }
 
-        /* Partner Cards Container */
         .partners {
             margin-top: 35px;
             display: flex;
@@ -188,7 +179,6 @@
             flex-wrap: wrap;
         }
 
-        /* Individual Card */
         .partner-card {
             background: rgba(255, 255, 255, 0.12);
             padding: 18px 25px;
@@ -196,7 +186,6 @@
             gap: 15px;
             width: 310px;
             border-radius: 18px;
-            text-align: left;
             text-decoration: none;
             color: white;
             backdrop-filter: blur(12px);
@@ -204,41 +193,17 @@
             transition: 0.3s ease;
         }
 
-        /* Icon on left */
-        .partner-card .icon {
-            font-size: 32px;
-            display: flex;
-            align-items: center;
-        }
-
-        /* Text inside card */
-        .partner-card h3 {
-            font-size: 20px;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .partner-card p {
-            font-size: 14px;
-            margin: 5px 0 0 0;
-            opacity: 0.8;
-        }
-
-        /* Hover Effect */
         .partner-card:hover {
             transform: translateY(-6px);
             background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
         }
 
-        /* Warning note */
         .note {
-            margin-top: 30px;
+            margin-top: 25px;
             font-size: 16px;
             opacity: 0.85;
             font-style: italic;
         }
-
 
         /* FOOTER */
         .footer {
@@ -250,7 +215,36 @@
             font-size: 15px;
         }
 
-        /* ANIMATION */
+        /* MOBILE FIXES */
+        @media (max-width: 600px) {
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+                margin: auto;
+            }
+
+            .donation-policy {
+                padding: 45px 15px;
+                border-radius: 25px 25px 0 0;
+            }
+
+            .partners {
+                flex-direction: column;
+                align-items: center;
+                gap: 18px;
+            }
+
+            .partner-card {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -262,75 +256,12 @@
                 transform: translateY(0);
             }
         }
-
-        /* FULL MOBILE RESPONSIVE FIX */
-        @media (max-width: 600px) {
-
-            .page-title {
-                padding: 50px 15px;
-                border-radius: 0 0 15px 15px;
-            }
-
-            .page-title h1 {
-                font-size: 1.8rem !important;
-            }
-
-            .page-title p {
-                font-size: 1rem !important;
-                padding: 0 10px;
-            }
-
-            .country-section {
-                padding: 30px 15px;
-            }
-
-            .grid {
-                grid-template-columns: 1fr !important;
-                gap: 18px;
-            }
-
-            .card {
-                padding: 20px;
-                border-radius: 14px;
-            }
-
-            .flag {
-                width: 45px;
-                height: 28px;
-            }
-
-            .donation-policy {
-                padding: 45px 20px;
-                border-radius: 25px 25px 0 0;
-            }
-
-            .donation-policy h2 {
-                font-size: 26px;
-            }
-
-            .partners {
-                flex-direction: column;
-                align-items: center;
-                gap: 18px;
-            }
-
-            .partner-card {
-                width: 100% !important;
-                max-width: 320px;
-                padding: 15px 20px;
-            }
-
-            .footer {
-                padding: 15px;
-                font-size: 13px;
-            }
-        }
     </style>
 </head>
 
 <body>
 
-    <!-- TOP LINK TO HOME -->
+    <!-- HEADER -->
     <div class="header">
         <a href="index.html">⬅ Back to Home</a>
     </div>
@@ -342,11 +273,11 @@
     </div>
 
     <!-- PRESENT COUNTRIES -->
-
     <div class="country-section">
         <h2 class="section-heading">🌍 PRESENT COUNTRIES</h2>
 
         <div class="grid">
+
             <div class="card">
                 <img src="https://flagcdn.com/ph.svg" class="flag">
                 <h3>Philippines</h3>
@@ -364,8 +295,8 @@
                 <h3>Pakistan</h3>
                 <span class="tag">Active Branch</span>
             </div>
-        </div>
 
+        </div>
     </div>
 
     <!-- FUTURE COUNTRIES -->
@@ -373,6 +304,7 @@
         <h2 class="section-heading">🚀 FUTURE EXPANSION</h2>
 
         <div class="grid">
+
             <div class="card">
                 <img src="https://flagcdn.com/na.svg" class="flag">
                 <h3>Namibia</h3>
@@ -384,21 +316,18 @@
                 <h3>Botswana</h3>
                 <span class="tag">Coming Soon</span>
             </div>
+
         </div>
     </div>
-
-
 
     <!-- DONATION POLICY -->
     <div class="donation-policy">
         <h2>Donation Policy</h2>
-
         <p>
-            We strictly DO NOT accept donations from the general public.<br><br>
+            We strictly DO NOT accept donations from the general public.<br>
             All donations are only approved through the following authorized partners:
         </p>
 
-        <!-- Stylish Partner Links -->
         <div class="partners">
             <a href="https://www.arrahmantax.com" target="_blank" class="partner-card">
                 <span class="icon">🏢</span>
@@ -417,12 +346,8 @@
             </a>
         </div>
 
-        <p class="note">
-            Any donation made without proper approval will NOT be accepted.
-        </p>
+        <p class="note">Any donation made without proper approval will NOT be accepted.</p>
     </div>
-
-
 
     <!-- FOOTER -->
     <div class="footer">
