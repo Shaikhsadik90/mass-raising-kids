@@ -45,13 +45,15 @@
             background:
                 linear-gradient(135deg, rgba(43, 88, 118, 0.85), rgba(78, 67, 118, 0.85)),
                 url("map.jpg");
-                background-size: cover;
+            background-size: cover;
             background-position: center;
             color: #fff;
             text-align: center;
             border-radius: 0 0 20px 20px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
             margin-bottom: 40px;
+            overflow: hidden;
+
         }
 
         .page-title h1 {
@@ -72,7 +74,10 @@
 
         @media (max-width: 768px) {
             .page-title {
-                padding: 60px 15px;
+                padding: 60px 0px;
+                background-size: contain;
+                background-position: top;
+                background-repeat: no-repeat;
             }
 
             .page-title h1 {
@@ -83,6 +88,7 @@
                 font-size: 1rem;
             }
         }
+
 
         /* SECTIONS */
         .country-section {
@@ -257,6 +263,7 @@
             }
         }
     </style>
+
 </head>
 
 <body>
