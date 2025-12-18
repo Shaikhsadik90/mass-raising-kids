@@ -1,4 +1,93 @@
 <style>
+    /* =========================
+   MOBILE FIRST FIX
+========================= */
+
+/* Default (Desktop already good) */
+
+/* ---------- TABLET ---------- */
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 70px 15px;
+  }
+
+  .contact-container {
+    padding: 45px;
+    gap: 30px;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+
+  .contact-section {
+    padding: 60px 12px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 30px 22px;
+    border-radius: 18px;
+  }
+
+  /* Heading Fix */
+  .contact-info h2 {
+    font-size: 26px !important;
+    text-align: center;
+  }
+
+  .contact-info h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+
+  .contact-info p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* Contact details */
+  .contact-info ul {
+    text-align: center;
+  }
+
+  .contact-info li {
+    font-size: 15px;
+  }
+
+  /* Inputs bigger for touch */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .contact-form textarea {
+    height: 140px;
+  }
+
+  /* Button full & bold */
+  .contact-form button {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 16px;
+  }
+
+  /* Top Contact Us text */
+  .contact-info:first-child h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact-info:first-child p {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
     /* Contact Heading Styling */
     .contact-info h2 {
         font-size: 40px;
